@@ -18,36 +18,18 @@ class ViewController: UIViewController {
     var Answers = [UILabel]();
     @IBOutlet weak var QuestionPrompt: UILabel!;
     @IBOutlet weak var StackView: UIStackView!
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape {
-            StackView.alignment = .center;
-            StackView.distribution = .equalSpacing;
-            StackView.axis = .horizontal;
-            let font = UIFont.boldSystemFont(ofSize: 16)
-            for i in 0..<self.Answers.count{
-                self.Answers[i].font = font;
-            }
-        } else {
-            StackView.spacing = 15.0;
-            StackView.axis = .vertical;
-            StackView.alignment = .leading;
-            let font = UIFont.boldSystemFont(ofSize: 25)
-            for i in 0..<self.Answers.count{
-                self.Answers[i].font = font;
-            }
-        }
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.Answers = [Answer1, Answer2, Answer3, Answer4, Answer5];
         for i in 0..<self.Answers.count{
             self.Answers[i].isHidden = true;
         }
-        loadNewQuestion();
+        self.loadNewQuestion();
     }
     
     func loadNewQuestion(){
-        QuestionPrompt.text = self.question!.QuizPrompt;
+        self.QuestionPrompt.text = self.question!.QuizPrompt;
         let answerCount: Int = self.question!.Answers.count;
         let letters: [String] = ["a", "b", "c", "d", "e"];
         for i in 0..<answerCount{
@@ -59,5 +41,27 @@ class ViewController: UIViewController {
             self.Answers[i].isHidden = false;
         }
     }
-}
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            self.setStackStyling(spacing: nil, axis: .horizontal, alignment: .center, fontSize: 16.0);
 
+        } else {
+            self.setStackStyling(spacing: 15.0, axis: .vertical, alignment: .leading, fontSize: 25.0);
+        }
+    }
+    
+    func setStackStyling(spacing: CGFloat?, axis: NSLayoutConstraint.Axis, alignment: UIStackView.Alignment, fontSize: CGFloat){
+        if let space = spacing {
+            self.StackView.spacing = space;
+        } else {
+            self.StackView.distribution = .equalSpacing;
+        }
+        self.StackView.axis = axis;
+        self.StackView.alignment = alignment;
+        let font = UIFont.boldSystemFont(ofSize: fontSize);
+        for i in 0..<self.Answers.count{
+            self.Answers[i].font = font;
+        }
+    }
+}
