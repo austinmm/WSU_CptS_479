@@ -31,10 +31,9 @@ class ViewController: UIViewController {
     func loadNewQuestion(){
         self.QuestionPrompt.text = self.question!.QuizPrompt;
         let answerCount: Int = self.question!.Answers.count;
-        let letters: [String] = ["a", "b", "c", "d", "e"];
         for i in 0..<answerCount{
             let answer: String = self.question!.Answers[i];
-            self.Answers[i].text = "\(letters[i]).) \(answer)";
+            self.Answers[i].text = "\(answer)";
             if(self.question?.CorrectAnswer == i){
                 self.Answers[i].textColor = .red;
             }
@@ -47,7 +46,7 @@ class ViewController: UIViewController {
             self.setStackStyling(spacing: nil, axis: .horizontal, alignment: .center, fontSize: 16.0);
 
         } else {
-            self.setStackStyling(spacing: 15.0, axis: .vertical, alignment: .leading, fontSize: 25.0);
+            self.setStackStyling(spacing: 15.0, axis: .vertical, alignment: .leading, fontSize: 20.0);
         }
     }
     

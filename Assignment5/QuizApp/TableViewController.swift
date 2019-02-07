@@ -72,7 +72,7 @@ class TableViewController: UITableViewController {
         }
         else if (segue.identifier == "AddQuestionSegue") {
             let AddQuestionView = segue.destination as! AddQuestionViewController;
-            AddQuestionView.questionNum = self.questions.count;
+            AddQuestionView.questionNum = self.questions.count + 1;
         }
     }
     
