@@ -10,26 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Quiz-->
+        <!--View Question-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DisplayQuestionView" id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Prompt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="84S-dt-gnl" userLabel="Prompt Label">
-                                <rect key="frame" x="55" y="96" width="265" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="265" id="9KD-7Z-350"/>
-                                    <constraint firstAttribute="height" constant="50" id="ttR-4j-608"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prompt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="84S-dt-gnl" userLabel="Prompt Label">
+                                <rect key="frame" x="30" y="130" width="315" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kxq-OT-ipc">
-                                <rect key="frame" x="87.5" y="160" width="200" height="162.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kxq-OT-ipc">
+                                <rect key="frame" x="166.5" y="174" width="42" height="162.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRN-wk-vUr" userLabel="Answer1">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -62,24 +58,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="i0q-VF-T2q"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Kxq-OT-ipc" firstAttribute="top" secondItem="84S-dt-gnl" secondAttribute="bottom" constant="14" id="0uY-NH-Zzx"/>
-                            <constraint firstItem="84S-dt-gnl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hob-9Z-V9R"/>
-                            <constraint firstItem="Kxq-OT-ipc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fSk-Xp-xaG"/>
-                            <constraint firstItem="84S-dt-gnl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="oZe-ME-fwJ"/>
-                            <constraint firstItem="Kxq-OT-ipc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87.5" id="vFG-Vb-mib"/>
+                            <constraint firstItem="84S-dt-gnl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="130" id="08X-Ih-Ryo"/>
+                            <constraint firstItem="84S-dt-gnl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Dg-uQ-bEw"/>
+                            <constraint firstItem="Kxq-OT-ipc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3bo-DM-zNG"/>
+                            <constraint firstItem="84S-dt-gnl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="3gA-qA-3yb"/>
+                            <constraint firstItem="Kxq-OT-ipc" firstAttribute="top" secondItem="84S-dt-gnl" secondAttribute="bottom" constant="20" id="tks-YQ-Tcd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Quiz" prompt="Quiz App" id="y0Q-iG-zVB">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="axP-Qj-Jh5"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="View Question" prompt="Quiz App" id="y0Q-iG-zVB"/>
                     <connections>
                         <outlet property="Answer1" destination="sRN-wk-vUr" id="yID-XT-fpU"/>
                         <outlet property="Answer2" destination="xbP-UJ-rXA" id="DBx-pe-CxU"/>
@@ -97,7 +88,7 @@
         <!--Add Question-->
         <scene sceneID="bkn-BD-Cq2">
             <objects>
-                <viewController id="2yy-GF-NIt" customClass="AddQuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddQuestionView" id="2yy-GF-NIt" customClass="AddQuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="YB7-Ve-ISB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -218,26 +209,28 @@
         <!--Questions-->
         <scene sceneID="prW-Xq-5lQ">
             <objects>
-                <tableViewController id="92D-x6-awL" customClass="TableViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="QuestionsTableView" id="92D-x6-awL" customClass="TableViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="S35-yB-5kj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" id="p3Y-Js-wAj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="questionCell" textLabel="IQW-dv-pAT" style="IBUITableViewCellStyleDefault" id="p3Y-Js-wAj">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p3Y-Js-wAj" id="rzp-tp-MX0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rightDetailCell" id="qB8-aM-KS9">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qB8-aM-KS9" id="1Vo-md-dob">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IQW-dv-pAT">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -249,18 +242,18 @@
                     <navigationItem key="navigationItem" title="Questions" prompt="Quiz App" id="xRg-wO-bcF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="LbF-V2-sQC">
                             <connections>
-                                <segue destination="2yy-GF-NIt" kind="show" id="l8S-LF-LZe"/>
+                                <segue destination="2yy-GF-NIt" kind="show" identifier="AddQuestionSegue" id="l8S-LF-LZe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="questionsTable" destination="S35-yB-5kj" id="ExX-ju-kHY"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="rlb-KU-Hpc"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="DisplayQuestionSegue" id="rlb-KU-Hpc"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i7H-c9-a4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="133"/>
+            <point key="canvasLocation" x="149.59999999999999" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iOO-3m-YxB">
