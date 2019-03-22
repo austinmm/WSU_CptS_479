@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class Election {
+    var Title: String = "";
+    var Canidates: [String] = [];
+    init(title: String, canidates: [String]){
+        self.Title = title;
+        self.Canidates = canidates;
+    }
+}

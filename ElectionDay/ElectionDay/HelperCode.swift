@@ -7,3 +7,4 @@
 //
 
 import Foundation
+enum ElectionType : Int { case Local, State, Federal, All };
