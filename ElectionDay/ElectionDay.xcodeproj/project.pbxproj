@@ -7,27 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17ABE2E9589F46751A8963F1 /* Pods_ElectionDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91ADBFD83FC44BEF338AC7FC /* Pods_ElectionDay.framework */; };
+		F9370137226E718700FBC4F2 /* app_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9370135226E718700FBC4F2 /* app_icon.jpg */; };
+		F9370138226E718700FBC4F2 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9370136226E718700FBC4F2 /* app_icon.png */; };
+		F937013A226E82E800FBC4F2 /* LoadDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9370139226E82E800FBC4F2 /* LoadDataVC.swift */; };
+		F937013C226ED27A00FBC4F2 /* Elected_Officials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937013B226ED27A00FBC4F2 /* Elected_Officials.swift */; };
+		F937013E226FECE800FBC4F2 /* ElectedOfficialsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937013D226FECE800FBC4F2 /* ElectedOfficialsTVC.swift */; };
+		F93701402270700F00FBC4F2 /* OfficialsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937013F2270700F00FBC4F2 /* OfficialsDetails.swift */; };
+		F94D4EF1226C19810019B2D9 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D4EF0226C19810019B2D9 /* HomePageVC.swift */; };
+		F94D4EF3226C394E0019B2D9 /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D4EF2226C394E0019B2D9 /* SettingsTVC.swift */; };
+		F94D4EFD226C45580019B2D9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F94D4EFC226C45580019B2D9 /* Settings.bundle */; };
+		F987C934226D65A9003760C4 /* polling_place_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F987C931226D65A8003760C4 /* polling_place_icon.png */; };
+		F987C935226D65A9003760C4 /* upcoming_election_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F987C932226D65A8003760C4 /* upcoming_election_icon.png */; };
+		F987C936226D65A9003760C4 /* elected_officials_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F987C933226D65A8003760C4 /* elected_officials_icon.png */; };
+		F987C938226D7DC9003760C4 /* ContestDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987C937226D7DC9003760C4 /* ContestDetailsVC.swift */; };
+		F987C93C226D98B1003760C4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987C93B226D98B1003760C4 /* LoginVC.swift */; };
+		F987C947226DB58B003760C4 /* ElectionDayModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F987C945226DB58B003760C4 /* ElectionDayModel.xcdatamodeld */; };
+		F987C949226DC25D003760C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F987C948226DC25D003760C4 /* GoogleService-Info.plist */; };
+		F9AD521922758CF8006FC49C /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD521822758CF8006FC49C /* SettingCell.swift */; };
+		F9AD521B2276A1F3006FC49C /* CurrentElectionsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD521A2276A1F3006FC49C /* CurrentElectionsTVC.swift */; };
 		F9C7118D2241E75500197877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7118C2241E75500197877 /* AppDelegate.swift */; };
-		F9C7118F2241E75500197877 /* CurrentElectionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7118E2241E75500197877 /* CurrentElectionsVC.swift */; };
+		F9C7118F2241E75500197877 /* VoterRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7118E2241E75500197877 /* VoterRegistrationVC.swift */; };
 		F9C711922241E75500197877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C711902241E75500197877 /* Main.storyboard */; };
 		F9C711942241E75500197877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C711932241E75500197877 /* Assets.xcassets */; };
 		F9C711972241E75500197877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C711952241E75500197877 /* LaunchScreen.storyboard */; };
-		F9C7119F2241F5E300197877 /* Election.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7119E2241F5E300197877 /* Election.swift */; };
-		F9C711A122421F4D00197877 /* API_Calls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C711A022421F4D00197877 /* API_Calls.swift */; };
-		F9C711A322421F8700197877 /* HelperCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C711A222421F8700197877 /* HelperCode.swift */; };
+		F9C711A322421F8700197877 /* Current_Elections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C711A222421F8700197877 /* Current_Elections.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A89273BCCFE406C7E01E749 /* Pods-ElectionDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionDay.release.xcconfig"; path = "Target Support Files/Pods-ElectionDay/Pods-ElectionDay.release.xcconfig"; sourceTree = "<group>"; };
+		6F5FABE78793C30E81B1390B /* Pods-ElectionDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionDay.debug.xcconfig"; path = "Target Support Files/Pods-ElectionDay/Pods-ElectionDay.debug.xcconfig"; sourceTree = "<group>"; };
+		91ADBFD83FC44BEF338AC7FC /* Pods_ElectionDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectionDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9370135226E718700FBC4F2 /* app_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = app_icon.jpg; path = ElectionDay/app_icon.jpg; sourceTree = SOURCE_ROOT; };
+		F9370136226E718700FBC4F2 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon.png; path = ElectionDay/app_icon.png; sourceTree = SOURCE_ROOT; };
+		F9370139226E82E800FBC4F2 /* LoadDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataVC.swift; sourceTree = "<group>"; };
+		F937013B226ED27A00FBC4F2 /* Elected_Officials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elected_Officials.swift; sourceTree = "<group>"; };
+		F937013D226FECE800FBC4F2 /* ElectedOfficialsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectedOfficialsTVC.swift; sourceTree = "<group>"; };
+		F937013F2270700F00FBC4F2 /* OfficialsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialsDetails.swift; sourceTree = "<group>"; };
+		F94D4EF0226C19810019B2D9 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		F94D4EF2226C394E0019B2D9 /* SettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
+		F94D4EFC226C45580019B2D9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F987C931226D65A8003760C4 /* polling_place_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = polling_place_icon.png; path = ElectionDay/polling_place_icon.png; sourceTree = SOURCE_ROOT; };
+		F987C932226D65A8003760C4 /* upcoming_election_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upcoming_election_icon.png; path = ElectionDay/upcoming_election_icon.png; sourceTree = SOURCE_ROOT; };
+		F987C933226D65A8003760C4 /* elected_officials_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = elected_officials_icon.png; path = ElectionDay/elected_officials_icon.png; sourceTree = SOURCE_ROOT; };
+		F987C937226D7DC9003760C4 /* ContestDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestDetailsVC.swift; sourceTree = "<group>"; };
+		F987C93B226D98B1003760C4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F987C946226DB58B003760C4 /* ElectionDayModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ElectionDayModel.xcdatamodel; sourceTree = "<group>"; };
+		F987C948226DC25D003760C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9AD521822758CF8006FC49C /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		F9AD521A2276A1F3006FC49C /* CurrentElectionsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentElectionsTVC.swift; sourceTree = "<group>"; };
 		F9C711892241E75500197877 /* ElectionDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectionDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C7118C2241E75500197877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9C7118E2241E75500197877 /* CurrentElectionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentElectionsVC.swift; sourceTree = "<group>"; };
+		F9C7118E2241E75500197877 /* VoterRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoterRegistrationVC.swift; sourceTree = "<group>"; };
 		F9C711912241E75500197877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9C711932241E75500197877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9C711962241E75500197877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9C711982241E75500197877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9C7119E2241F5E300197877 /* Election.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Election.swift; sourceTree = "<group>"; };
-		F9C711A022421F4D00197877 /* API_Calls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Calls.swift; sourceTree = "<group>"; };
-		F9C711A222421F8700197877 /* HelperCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperCode.swift; sourceTree = "<group>"; };
+		F9C711A222421F8700197877 /* Current_Elections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current_Elections.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +71,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17ABE2E9589F46751A8963F1 /* Pods_ElectionDay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		822C178A3C930D077B95214C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F5FABE78793C30E81B1390B /* Pods-ElectionDay.debug.xcconfig */,
+				0A89273BCCFE406C7E01E749 /* Pods-ElectionDay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7F2B1BDD9EED03C3AC8CDF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91ADBFD83FC44BEF338AC7FC /* Pods_ElectionDay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F987C930226D6569003760C4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F9370135226E718700FBC4F2 /* app_icon.jpg */,
+				F9370136226E718700FBC4F2 /* app_icon.png */,
+				F987C933226D65A8003760C4 /* elected_officials_icon.png */,
+				F987C931226D65A8003760C4 /* polling_place_icon.png */,
+				F987C932226D65A8003760C4 /* upcoming_election_icon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		F9C711802241E75500197877 = {
 			isa = PBXGroup;
 			children = (
 				F9C7118B2241E75500197877 /* ElectionDay */,
 				F9C7118A2241E75500197877 /* Products */,
+				822C178A3C930D077B95214C /* Pods */,
+				E7F2B1BDD9EED03C3AC8CDF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +128,27 @@
 		F9C7118B2241E75500197877 /* ElectionDay */ = {
 			isa = PBXGroup;
 			children = (
-				F9C7118C2241E75500197877 /* AppDelegate.swift */,
-				F9C7118E2241E75500197877 /* CurrentElectionsVC.swift */,
+				F987C930226D6569003760C4 /* Images */,
+				F9C7118E2241E75500197877 /* VoterRegistrationVC.swift */,
+				F987C937226D7DC9003760C4 /* ContestDetailsVC.swift */,
+				F9AD521A2276A1F3006FC49C /* CurrentElectionsTVC.swift */,
+				F94D4EF2226C394E0019B2D9 /* SettingsTVC.swift */,
+				F94D4EF0226C19810019B2D9 /* HomePageVC.swift */,
+				F937013F2270700F00FBC4F2 /* OfficialsDetails.swift */,
+				F937013D226FECE800FBC4F2 /* ElectedOfficialsTVC.swift */,
+				F9370139226E82E800FBC4F2 /* LoadDataVC.swift */,
+				F987C93B226D98B1003760C4 /* LoginVC.swift */,
 				F9C711902241E75500197877 /* Main.storyboard */,
-				F9C711932241E75500197877 /* Assets.xcassets */,
 				F9C711952241E75500197877 /* LaunchScreen.storyboard */,
+				F9C7118C2241E75500197877 /* AppDelegate.swift */,
+				F9C711932241E75500197877 /* Assets.xcassets */,
+				F9AD521822758CF8006FC49C /* SettingCell.swift */,
+				F937013B226ED27A00FBC4F2 /* Elected_Officials.swift */,
+				F9C711A222421F8700197877 /* Current_Elections.swift */,
+				F987C945226DB58B003760C4 /* ElectionDayModel.xcdatamodeld */,
 				F9C711982241E75500197877 /* Info.plist */,
-				F9C7119E2241F5E300197877 /* Election.swift */,
-				F9C711A022421F4D00197877 /* API_Calls.swift */,
-				F9C711A222421F8700197877 /* HelperCode.swift */,
+				F987C948226DC25D003760C4 /* GoogleService-Info.plist */,
+				F94D4EFC226C45580019B2D9 /* Settings.bundle */,
 			);
 			path = ElectionDay;
 			sourceTree = "<group>";
@@ -80,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9C7119B2241E75500197877 /* Build configuration list for PBXNativeTarget "ElectionDay" */;
 			buildPhases = (
+				FA560EF0C7F7BC3D9CD301AF /* [CP] Check Pods Manifest.lock */,
 				F9C711852241E75500197877 /* Sources */,
 				F9C711862241E75500197877 /* Frameworks */,
 				F9C711872241E75500197877 /* Resources */,
+				BDB5C2B3279CFCACBDAEB5AD /* [CP] Embed Pods Frameworks */,
+				F8F77F844B36B275BEBCF936 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +188,7 @@
 				TargetAttributes = {
 					F9C711882241E75500197877 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -131,24 +215,127 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94D4EFD226C45580019B2D9 /* Settings.bundle in Resources */,
+				F987C949226DC25D003760C4 /* GoogleService-Info.plist in Resources */,
 				F9C711972241E75500197877 /* LaunchScreen.storyboard in Resources */,
 				F9C711942241E75500197877 /* Assets.xcassets in Resources */,
 				F9C711922241E75500197877 /* Main.storyboard in Resources */,
+				F9370137226E718700FBC4F2 /* app_icon.jpg in Resources */,
+				F987C934226D65A9003760C4 /* polling_place_icon.png in Resources */,
+				F987C936226D65A9003760C4 /* elected_officials_icon.png in Resources */,
+				F9370138226E718700FBC4F2 /* app_icon.png in Resources */,
+				F987C935226D65A9003760C4 /* upcoming_election_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDB5C2B3279CFCACBDAEB5AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElectionDay/Pods-ElectionDay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElectionDay/Pods-ElectionDay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F77F844B36B275BEBCF936 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElectionDay/Pods-ElectionDay-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElectionDay/Pods-ElectionDay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA560EF0C7F7BC3D9CD301AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElectionDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9C711852241E75500197877 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C711A322421F8700197877 /* HelperCode.swift in Sources */,
-				F9C7118F2241E75500197877 /* CurrentElectionsVC.swift in Sources */,
+				F937013E226FECE800FBC4F2 /* ElectedOfficialsTVC.swift in Sources */,
+				F93701402270700F00FBC4F2 /* OfficialsDetails.swift in Sources */,
+				F9C711A322421F8700197877 /* Current_Elections.swift in Sources */,
+				F9C7118F2241E75500197877 /* VoterRegistrationVC.swift in Sources */,
+				F937013C226ED27A00FBC4F2 /* Elected_Officials.swift in Sources */,
+				F937013A226E82E800FBC4F2 /* LoadDataVC.swift in Sources */,
+				F987C93C226D98B1003760C4 /* LoginVC.swift in Sources */,
+				F9AD521B2276A1F3006FC49C /* CurrentElectionsTVC.swift in Sources */,
 				F9C7118D2241E75500197877 /* AppDelegate.swift in Sources */,
-				F9C711A122421F4D00197877 /* API_Calls.swift in Sources */,
-				F9C7119F2241F5E300197877 /* Election.swift in Sources */,
+				F94D4EF1226C19810019B2D9 /* HomePageVC.swift in Sources */,
+				F9AD521922758CF8006FC49C /* SettingCell.swift in Sources */,
+				F987C938226D7DC9003760C4 /* ContestDetailsVC.swift in Sources */,
+				F94D4EF3226C394E0019B2D9 /* SettingsTVC.swift in Sources */,
+				F987C947226DB58B003760C4 /* ElectionDayModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +479,7 @@
 		};
 		F9C7119C2241E75500197877 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F5FABE78793C30E81B1390B /* Pods-ElectionDay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,13 +491,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AM.ElectionDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F9C7119D2241E75500197877 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A89273BCCFE406C7E01E749 /* Pods-ElectionDay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,7 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AM.ElectionDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -348,6 +537,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F987C945226DB58B003760C4 /* ElectionDayModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F987C946226DB58B003760C4 /* ElectionDayModel.xcdatamodel */,
+			);
+			currentVersion = F987C946226DB58B003760C4 /* ElectionDayModel.xcdatamodel */;
+			path = ElectionDayModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F9C711812241E75500197877 /* Project object */;
 }

@@ -1,0 +1,6 @@
+framework module Pods_ElectionDay {
+  umbrella header "Pods-ElectionDay-umbrella.h"
+
+  export *
+  module * { export * }
+}

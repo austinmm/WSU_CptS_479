@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GooglePlaces
 
 class SettingsTableVC: UITableViewController, UITextFieldDelegate{
     @IBOutlet weak var Username: UITextField!;
